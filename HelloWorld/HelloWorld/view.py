@@ -1,12 +1,6 @@
-from django.http import HttpResponse
+from django.shortcuts import render_to_response
 import datetime
-from django.template.loader import get_template
-from django.template import Template
-from django.template import  Context
 
 def current_datetime(request):
     now = datetime.datetime.now()
-    tpl = get_template("current_time.html")
-#     tpl = Template("<html><body>It is now {{ current_date }}</body></html>")
-    html = tpl.render(Context({'current_date': now}))
-    return HttpResponse(html)
+    return render_to_response('current_time.html', {'current_date': now})
