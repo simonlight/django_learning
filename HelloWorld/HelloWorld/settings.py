@@ -55,7 +55,7 @@ ROOT_URLCONF = 'HelloWorld.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["/home/wang/workspace/code/django_learning/HelloWorld/HelloWorld/templates"],
+        'DIRS': ["/home/wang/workspace/code/django_learning/HelloWorld/HelloWorld/template"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
